@@ -79,6 +79,9 @@
 		14F7A0F01BDA714B003C6C10 /* RCTFPSGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F7A0EF1BDA714B003C6C10 /* RCTFPSGraph.m */; };
 		191E3EBE1C29D9AF00C180A6 /* RCTRefreshControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 191E3EBD1C29D9AF00C180A6 /* RCTRefreshControlManager.m */; };
 		191E3EC11C29DC3800C180A6 /* RCTRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 191E3EC01C29DC3800C180A6 /* RCTRefreshControl.m */; };
+		2296F5DD1ED2639D00C6FF68 /* ConstraintNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2296F5DB1ED2639D00C6FF68 /* ConstraintNode.h */; };
+		2296F5DE1ED2639D00C6FF68 /* ConstraintNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2296F5DC1ED2639D00C6FF68 /* ConstraintNode.m */; };
+		2296F5DF1ED2641900C6FF68 /* ConstraintNode.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 2296F5DB1ED2639D00C6FF68 /* ConstraintNode.h */; };
 		2638623A1E732AB60010FEBF /* systemJSCWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E41D1E73031C009375BD /* systemJSCWrapper.cpp */; };
 		2638623B1E732AB70010FEBF /* systemJSCWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E41D1E73031C009375BD /* systemJSCWrapper.cpp */; };
 		2D074E381E609E65001D6DD0 /* RCTReconnectingWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = A12E9E281E5DEB860029001B /* RCTReconnectingWebSocket.h */; };
@@ -963,6 +966,7 @@
 			dstPath = include/React;
 			dstSubfolderSpec = 16;
 			files = (
+				2296F5DF1ED2641900C6FF68 /* ConstraintNode.h in Copy Headers */,
 				A12E9E1F1E5DEAEF0029001B /* RCTPackagerClient.h in Copy Headers */,
 				A12E9E201E5DEAEF0029001B /* RCTPackagerClientResponder.h in Copy Headers */,
 				3D80D91F1DF6FA890028D040 /* RCTImageLoader.h in Copy Headers */,
@@ -1271,6 +1275,8 @@
 		191E3EBD1C29D9AF00C180A6 /* RCTRefreshControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControlManager.m; sourceTree = "<group>"; };
 		191E3EBF1C29DC3800C180A6 /* RCTRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRefreshControl.h; sourceTree = "<group>"; };
 		191E3EC01C29DC3800C180A6 /* RCTRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControl.m; sourceTree = "<group>"; };
+		2296F5DB1ED2639D00C6FF68 /* ConstraintNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstraintNode.h; sourceTree = "<group>"; };
+		2296F5DC1ED2639D00C6FF68 /* ConstraintNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstraintNode.m; sourceTree = "<group>"; };
 		2D2A28131D9B038B00D4039D /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		352DCFEE1D19F4C20056D623 /* RCTI18nUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTI18nUtil.h; sourceTree = "<group>"; };
 		352DCFEF1D19F4C20056D623 /* RCTI18nUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTI18nUtil.m; sourceTree = "<group>"; };
@@ -1480,6 +1486,8 @@
 				3D5AC7161E0056D9000F9153 /* RCTTVNavigationEventEmitter.m */,
 				13E067481A70F434002CDEE1 /* RCTUIManager.h */,
 				13E067491A70F434002CDEE1 /* RCTUIManager.m */,
+				2296F5DB1ED2639D00C6FF68 /* ConstraintNode.h */,
+				2296F5DC1ED2639D00C6FF68 /* ConstraintNode.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -2035,6 +2043,7 @@
 				3D80DA1B1DF820620028D040 /* RCTResizeMode.h in Headers */,
 				3D80DA1C1DF820620028D040 /* RCTLinkingManager.h in Headers */,
 				3D80DA1D1DF820620028D040 /* RCTNetworking.h in Headers */,
+				2296F5DD1ED2639D00C6FF68 /* ConstraintNode.h in Headers */,
 				3D80DA1E1DF820620028D040 /* RCTNetworkTask.h in Headers */,
 				3D80DA1F1DF820620028D040 /* RCTPushNotificationManager.h in Headers */,
 				3D80DA201DF820620028D040 /* RCTAssert.h in Headers */,
@@ -2683,6 +2692,7 @@
 				13AB90C11B6FA36700713B4F /* RCTComponentData.m in Sources */,
 				13B0801B1A69489C00A75B9A /* RCTNavigatorManager.m in Sources */,
 				CF85BC331E79EC6B00F1EF3B /* RCTDeviceInfo.m in Sources */,
+				2296F5DE1ED2639D00C6FF68 /* ConstraintNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

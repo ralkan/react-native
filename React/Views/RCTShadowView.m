@@ -145,6 +145,12 @@ static void RCTProcessMetaPropsBorder(const YGValue metaProps[META_PROP_COUNT], 
 // width = 213.5 - 106.5 = 107
 // You'll notice that this is the same width we calculated for the parent view because we've taken its position into account.
 
+- (void)applyLayoutCntNode:(ConstraintNode *)node
+         viewsWithNewFrame:(NSMutableSet<RCTShadowView *> *)viewsWithNewFrame
+{
+  
+}
+
 - (void)applyLayoutNode:(YGNodeRef)node
       viewsWithNewFrame:(NSMutableSet<RCTShadowView *> *)viewsWithNewFrame
        absolutePosition:(CGPoint)absolutePosition
@@ -335,6 +341,7 @@ static void RCTProcessMetaPropsBorder(const YGValue metaProps[META_PROP_COUNT], 
 
     _reactSubviews = [NSMutableArray array];
 
+    _cntNode = [ConstraintNode new];
     _yogaNode = YGNodeNew();
     YGNodeSetContext(_yogaNode, (__bridge void *)self);
     YGNodeSetPrintFunc(_yogaNode, RCTPrint);

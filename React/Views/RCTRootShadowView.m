@@ -32,6 +32,8 @@
   YGNodeCalculateLayout(self.yogaNode, availableWidth, availableHeight, _baseDirection);
 
   NSMutableSet<RCTShadowView *> *viewsWithNewFrame = [NSMutableSet set];
+  NSMutableSet<RCTShadowView *> *cntViewsWithNewFrame = [NSMutableSet set];
+  [self applyLayoutCntNode:self.cntNode viewsWithNewFrame:cntViewsWithNewFrame];
   [self applyLayoutNode:self.yogaNode viewsWithNewFrame:viewsWithNewFrame absolutePosition:CGPointZero];
   return viewsWithNewFrame;
 }

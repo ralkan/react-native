@@ -12,6 +12,7 @@
 #import <React/RCTComponent.h>
 #import <React/RCTRootView.h>
 #import <yoga/Yoga.h>
+#import <React/ConstraintNode.h>
 
 @class RCTSparseArray;
 
@@ -45,6 +46,7 @@ typedef void (^RCTApplierBlock)(NSDictionary<NSNumber *, UIView *> *viewRegistry
 
 @property (nonatomic, weak, readonly) RCTShadowView *superview;
 @property (nonatomic, assign, readonly) YGNodeRef yogaNode;
+@property (nonatomic, strong) ConstraintNode cntNode;
 @property (nonatomic, copy) NSString *viewName;
 @property (nonatomic, strong) UIColor *backgroundColor; // Used to propagate to children
 @property (nonatomic, copy) RCTDirectEventBlock onLayout;
@@ -193,6 +195,9 @@ typedef void (^RCTApplierBlock)(NSDictionary<NSNumber *, UIView *> *viewRegistry
                    withFrame:(CGRect)frame
                       hidden:(BOOL)hidden
             absolutePosition:(CGPoint)absolutePosition;
+
+- (void)applyLayoutCntNode:(ConstraintNode *)node
+         viewsWithNewFrame:(NSMutableSet<RCTShadowView *> *)viewsWithNewFrame;
 
 /**
  * Apply the CSS layout.
